@@ -2,6 +2,6 @@ FROM handcraftedbits/pgmodeler-builder-deps1
 MAINTAINER HandcraftedBits <opensource@handcraftedbits.com>
 
 RUN cd /opt/mxe && \
-  make MXE_TARGETS='x86_64-w64-mingw32.shared' qtbase qtimageformats qtsvg && \
+  make MXE_TARGETS='x86_64-w64-mingw32.shared' qt6-qtbase qt6-qtimageformats qt6-qtsvg && \
   rm -rf pkg .ccache
 

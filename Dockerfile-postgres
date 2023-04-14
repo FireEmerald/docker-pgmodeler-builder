@@ -1,7 +1,7 @@
 FROM handcraftedbits/pgmodeler-builder-deps2:latest
 MAINTAINER HandcraftedBits <opensource@handcraftedbits.com>
 
-ARG VERSION_POSTGRESQL=REL_11_0
+ARG VERSION_POSTGRESQL=REL_13_6
 
 RUN cd /opt/src && \
   git clone https://github.com/postgres/postgres.git && \

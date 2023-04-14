@@ -12,10 +12,10 @@ This container currently produces binaries for Windows x86_64 only.  Other platf
 Simply run the `handcraftedbits/pgmodeler-builder` image, specifying an output volume, mapped to the container
 directory `/opt/pgmodeler` (where binaries will be saved) and the version to build (corresponding to a valid tag in the
 [pgModeler Git repository](https://github.com/pgmodeler/pgmodeler) repository).  For example, to build pgModeler
-version `0.9.1` and store the result in `/mnt/windows/pgmodeler`:
+version `1.0.1` and store the result in `/mnt/windows/pgmodeler`:
 
 ```bash
-docker run -v /mnt/windows/pgmodeler:/opt/pgmodeler handcraftedbits/pgmodeler-builder v0.9.1
+docker run -v /mnt/windows/pgmodeler:/opt/pgmodeler handcraftedbits/pgmodeler-builder v1.0.1
 ```
 
 If you run the command without specifying a version the container script will list all valid pgModeler versions.
