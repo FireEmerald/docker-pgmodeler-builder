@@ -23,10 +23,10 @@ function build() {
 
      # Build pgModeler.
 
-     ${TOOLCHAIN}-qmake-qt6 -r PREFIX=${DIR_INSTALL} PGSQL_INC=${DIR_POSTGRESQL}/include \
+     qmake6 -r PREFIX=${DIR_INSTALL} PGSQL_INC=${DIR_POSTGRESQL}/include \
           PGSQL_LIB=${DIR_POSTGRESQL}/lib/libpq.dll XML_INC=${dir_mxe_toolchain}/include/libxml2 \
           XML_LIB=${dir_mxe_toolchain}/bin/libxml2-2.dll
-     make
+     make -j6
      make install
      rm ${DIR_INSTALL}/*.a
 
